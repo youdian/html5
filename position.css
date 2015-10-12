@@ -1,0 +1,8 @@
+div{width:10%; height: 100px;}
+/*保留元素原来的位置*/
+#a{background-color:red; position:relative; left: 500px; top:200px;}
+/*不保留元素原来的位置，当元素不可见时，显示滚动条*/
+#b{background-color:blue; position:absolute; right: 200px; top: 400px;}
+/*不保留元素原来的位置，不会随着滚动条滚动。当元素不可见时，不显示滚动条*/
+#c{background-color:yellow; position:fixed; left:200px; top: 800px;}
+#d{background-color:gray;}
