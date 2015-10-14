@@ -1,0 +1,21 @@
+.box {
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    background: blue;
+}
+
+.another {
+    width: 200px;
+    height: 200px;
+    background: gray;
+    
+}
+
+.content {
+    float:left;
+    height: 300px;
+    width:300px;
+    background: red;
+
+}
