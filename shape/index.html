@@ -1,0 +1,100 @@
+<htnl>
+    <head>
+        <style type="text/css">
+            p {
+                margin-top: 30px;
+                width: 200px;
+                text-align: center;
+            }
+            div {
+                width: 200px;
+                height: 200px;
+                margin-top: 10px;
+            }
+            .circle {
+                background-color: antiquewhite;
+                border-radius: 100px;
+            }
+            .rectangle {
+                background-color: aqua;
+                
+            }
+            
+            .oval {
+                background-color: aquamarine;
+                border-radius: 30px;
+            }
+            
+            .up-triangle {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid red;
+            }
+            .top-left-triangle {
+                width: 0;
+                height: 0;
+                border-left: 50px solid red;
+                border-bottom: 50px solid transparent;
+            }
+            .top-left-triangle-2 {
+                width: 0;
+                height: 0;
+                border-top: 50px solid red;
+                border-right: 50px solid transparent;
+            }
+            .parallelogram {
+                background-color: red;
+                margin-left: 50px;
+                transform: skewX(20deg) skewY(20deg);
+                
+            }
+            .tixing {
+                border-bottom: 100px solid red;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                height: 0;
+                width: 100px;
+            }
+            .six-corner-star {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid red;
+                position: relative;
+            }
+            .six-corner-star:after {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid red;
+                position: absolute;
+                content: "";
+                top: 30px;
+                left: -50px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>圆形</p>
+        <div class="circle"></div>
+        <p>方形</p>
+        <div class="rectangle"></div>
+        <p>圆角方形</p>
+        <div class="oval"></div>
+        <p>上三角形</p>
+        <div class="up-triangle"></div>
+        <p>左上三角</p>
+        <div class="top-left-triangle"></div>
+        <div class="top-left-triangle-2"></div>
+        <p>平行四边形</p>
+        <div class="parallelogram"></div>
+        <p>梯形</p>
+        <div class="tixing"></div>
+        <p>六角星</p>
+        <div class="six-corner-star"></div>
+    </body>
+</htnl>
