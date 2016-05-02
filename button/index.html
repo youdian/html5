@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="application/javascript">
+            function addEventToButton() {
+                var buttons = document.getElementsByClassName("button");
+                for (var i=0; i <buttons.length;i++) {
+                    var button = buttons[i];
+                    button.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        alert(e.target.value);
+                    });
+                }
+            }
+            window.addEventListener('load', addEventToButton);
+            
+        </script>
+        <style type="text/css">
+            .body {
+                position: relative;
+            }
+            .button {
+                display: block;
+                margin-top: 10px;
+                border: none; /*去掉边框*/
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: white;
+                background-color: burlywood;
+                cursor: pointer;
+                font-size: 16px;
+                text-decoration: none;
+                outline: none;
+            }
+            a[class='button'] {
+                text-decoration: none; /*去掉下划线*/
+                display: inline-block;
+            }
+            .button:hover {
+                opacity: 0.8;
+            }
+            .button:active {
+                opacity: 0.7;
+            }
+            .button:nth-child(2) { /*选中第2个元素， 从1开始*/
+                border-radius: 5px; /*圆角效果*/
+            }
+            
+            .img-button {
+                width: 77px;
+                height: 77px;
+                display: block;
+                background: url(sprite.svg) no-repeat 0 -77px;
+                margin-top: 20px;
+                text-decoration: none;
+                color: #2098f5;
+                transition: 100ms;
+                opacity: 0.7;
+                
+            }
+            .img-button:hover,
+            .img-button:focus
+            {
+                opacity: 1;
+            }
+            
+            .flex-button {
+                background-color: burlywood;
+                border: none;
+                outline: none;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding: 10px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" class="button" value="确定"/>
+        <button value="确定" class="button">确定</button>
+        <a href="index.html" target="_blank"  class="button">确定</a>
+        <a href="index.html" target="_blank" class="img-button"></a>
+        <button value="confirm" class="flex-button">Confirm</button>
+    </body>
+</html>
