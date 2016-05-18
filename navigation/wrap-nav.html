@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script type="application/javascript">
+
+            
+        </script>
+        <style type="text/css">
+            .top {
+                list-style: none;
+                width: 100%;
+                height: 0;
+                overflow: visible;
+                background-color: cyan;
+                padding: 0;
+            }
+            .top li {
+                width: 20%;
+                height: 50px;
+                display: inline-block;
+                cursor: pointer;
+                opacity: 0.9;
+                background-color: forestgreen;
+                text-align: center;
+                /*去掉item之间的间隔*/
+                float: left;
+                /**line-height与height相同使文字垂直居中*/
+                line-height: 50px;
+                /*当屏幕宽度不够展示时会自动换行*/
+                min-width: 150px;
+                position: relative;
+                
+                
+            }
+            .top li a {
+                text-decoration: none;
+                color: white;
+            }
+            .top li:hover {
+                opacity: 1;
+            }
+            .child {
+                list-style: none;
+                position: absolute;
+                left: -9999px;
+            }
+            li:hover .child {
+                left: 0px;
+            }
+        </style>
+    </head>
+    <body>
+	<nav>
+		<ul class="top">
+			<li><a href="#"><span class="iconic home"></span> Home</a></li>
+			<li><a href="#"><span class="iconic plus-alt"></span> About</a>
+				<ul class="child">
+					<li><a href="#">Company History</a></li>
+					<li><a href="#">Meet the team</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic magnifying-glass"></span> Services</a>
+				<ul class="child">
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">App Development</a></li>
+					<li><a href="#">Email Campaigns</a></li>
+					<li><a href="#">Copyrighting</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic map-pin"></span> Products</a>
+				<ul class="child">
+					<li><a href="#">Widget One</a></li>
+					<li><a href="#">Widget Two</a></li>
+					<li><a href="#">Web App Three</a></li>
+					<li><a href="#">Web App Four</a></li>
+					<li><a href="#">Crazy Products</a></li>
+					<li><a href="#">iPhone Apps</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic mail"></span> Contact</a>
+				<ul class="child">
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Directions</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+	</nav>
+    </body>
+</html>
