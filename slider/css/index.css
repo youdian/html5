@@ -21,12 +21,15 @@ body {
     
 }
 
+.scroll {
+    transition: left 1s linear;  
+}
+
 #slider {
     width: 400%;
     height: auto;
     overflow: hidden;
     position: absolute;
-    transition: left 1s linear;
     left: 0;
 }  
 
