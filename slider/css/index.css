@@ -20,6 +20,8 @@ body {
     height: 50px;
     overflow: hidden;
     position: absolute;
+    transition: left 1s linear;
+    left: 0;
 }
 
 .item {
